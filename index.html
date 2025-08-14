@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>LuxeLocks Hair Studio - Calgary's Premier Hair Salon</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;500;600&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <!-- Responsive Navigation Menu -->
+    <header class="hero" id="home">
+        <nav class="navbar" id="navbar">
+            <div class="logo">LuxeLocks</div>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">&#9776;</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </nav>
+
+        <!-- Hero Banner with Multimedia Video -->
+        <video autoplay muted loop playsinline class="hero-video">
+            <source src="images/video.MP4" type="video/mp4" />
+            Your browser does not support the video tag.
+        </video>
+
+        <div class="hero-content">
+            <h1>Where Hair Meets Elegance</h1>
+            <p>Transform your look with Calgary's premier hair styling experience. Our expert stylists create
+                personalized looks that reflect your unique style and personality.</p>
+            <a href="#services" class="cta">Book Your Transformation</a>
+        </div>
+    </header>
+
+    <!-- Dynamic Weather Section - API Content -->
+    <section class="weather-section">
+        <div class="container">
+            <h2>Current Weather</h2>
+            <div id="app">
+                <div class="weather-input">
+                    <input type="text" id="cityInput" placeholder="Enter city (e.g., Calgary)">
+                    <button id="getWeatherBtn">Get Weather</button>
+                </div>
+
+                <div class="weather-info">
+                    <div id="cityName">Calgary</div>
+                    <div id="weatherTemp">Loading...</div>
+                    <div id="weatherDesc">Fetching weather data...</div>
+                    <div id="humidity">--</div>
+                    <div id="windSpeed">--</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2>Welcome to LuxeLocks</h2>
+            <p>At LuxeLocks Hair Studio, we believe that great hair is not a matter of luck, but a matter of skill,
+                passion,
+                and the right products. Our team of experienced stylists stays current with the latest trends and
+                techniques, using only premium products to ensure your hair looks and feels its absolute best. From
+                classic
+                cuts to bold transformations, we're here to help you discover your perfect look.</p>
+        </div>
+    </section>
+
+    <!-- Interactive Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Our Signature Services</h2>
+            <div class="card-container">
+                <!-- Card 1 -->
+                <div class="card" data-service="haircut">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?w=400&h=300&fit=crop"
+                            alt="Professional Haircut" class="card-img">
+                    </div>
+                    <div class="card-content">
+                        <h3>Precision Cut & Style</h3>
+                        <p>Expert cuts tailored to your face shape and lifestyle, for women, men, and children.</p>
+                        <div class="price">From $65</div>
+                    </div>
+                    <div class="card-overlay">
+                        <div class="overlay-content">
+                            <h4>What's Included:</h4>
+                            <ul>
+                                <li>✓ Consultation & Analysis</li>
+                                <li>✓ Professional Wash & Condition</li>
+                                <li>✓ Precision Cut</li>
+                                <li>✓ Blow Dry & Style</li>
+                                <li>✓ Styling Tips & Product Recommendations</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="card" data-service="color">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=400&h=300&fit=crop"
+                            alt="Hair Coloring" class="card-img">
+                    </div>
+                    <div class="card-content">
+                        <h3>Color & Highlights</h3>
+                        <p>Complete color transformations using premium products for vibrant, long-lasting results.</p>
+                        <div class="price">From $120</div>
+                    </div>
+                    <div class="card-overlay">
+                        <div class="overlay-content">
+                            <h4>What's Included:</h4>
+                            <ul>
+                                <li>✓ Color Consultation</li>
+                                <li>✓ Strand Test</li>
+                                <li>✓ Professional Color Application</li>
+                                <li>✓ Toning & Conditioning Treatment</li>
+                                <li>✓ Cut & Style</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="card" data-service="styling">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=400&h=300&fit=crop"
+                            alt="Event Styling" class="card-img">
+                    </div>
+                    <div class="card-content">
+                        <h3>Special Event Styling</h3>
+                        <p>Elegant updos and styling for weddings, proms, and special occasions.</p>
+                        <div class="price">From $85</div>
+                    </div>
+                    <div class="card-overlay">
+                        <div class="overlay-content">
+                            <h4>What's Included:</h4>
+                            <ul>
+                                <li>✓ Style Consultation</li>
+                                <li>✓ Hair Preparation</li>
+                                <li>✓ Custom Styling</li>
+                                <li>✓ Hair Accessories (if desired)</li>
+                                <li>✓ Touch-up Kit</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section with Interactive Modal -->
+
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2>Our Work</h2>
+            <p class="gallery-subtitle">See the transformations that make our clients shine</p>
+            <div class="gallery-grid">
+                <div class="gallery-item" onclick="openModal('images/style1.jpg')">
+                    <img src="images/style1.jpg" alt="Elegant Bob Cut" loading="lazy" />
+                    <div class="gallery-overlay">
+                        <span>Elegant Bob Cut</span>
+                    </div>
+                </div>
+
+                <div class="gallery-item" onclick="openModal('images/style2.jpg')">
+                    <img src="images/style2.jpg" alt="Vibrant Color" loading="lazy" />
+                    <div class="gallery-overlay">
+                        <span>Vibrant Color</span>
+                    </div>
+                </div>
+
+                <div class="gallery-item" onclick="openModal('images/style3.jpg')">
+                    <img src="images/style3.jpg" alt="Wedding Updo" loading="lazy" />
+                    <div class="gallery-overlay">
+                        <span>Wedding Updo</span>
+                    </div>
+                </div>
+
+                <div class="gallery-item" onclick="openModal('images/style4.jpg')">
+                    <img src="images/style4.jpg" alt="Modern Highlights" loading="lazy" />
+                    <div class="gallery-overlay">
+                        <span>Modern Highlights</span>
+                    </div>
+                </div>
+
+                <div class="gallery-item" onclick="openModal('images/style5.jpg')">
+                    <img src="images/style5.jpg" alt="Balayage Style" loading="lazy" />
+                    <div class="gallery-overlay">
+                        <span>Balayage Style</span>
+                    </div>
+                </div>
+
+                <div class="gallery-item" onclick="openModal('images/style6.jpg')">
+                    <img src="images/style6.jpg" alt="Curly Style" loading="lazy" />
+                    <div class="gallery-overlay">
+                        <span>Curly Style</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Quote of the Day - API Integration -->
+    <section class="quote-section">
+        <div class="container">
+            <h2>Inspirational Quote of the Day</h2>
+            <div class="quote-container">
+                <div class="quote-text" id="quoteText">
+                    <div class="loading"></div>
+                </div>
+                <div class="quote-author" id="quoteAuthor">Loading inspiring quote...</div>
+                <button class="new-quote-btn" id="newQuoteBtn">Get New Quote</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Section - Multimedia -->
+    <section class="video">
+        <div class="container">
+            <h2>Take a Virtual Tour</h2>
+            <div class="embedded-video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/5VvEe0nlx9w?si=kkm8UR8EtcftKLp8"
+                    title="Salon Tour" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Contact Form -->
+    <section id="contact" class="contact-form">
+        <div class="container">
+            <h2>Book Your Appointment</h2>
+            <div class="form-container">
+                <form id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required placeholder="Enter your email">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Preferred Service</label>
+                            <select id="service" name="service">
+                                <option value="">Select a service</option>
+                                <option value="haircut">Precision Cut & Style</option>
+                                <option value="color">Color & Highlights</option>
+                                <option value="styling">Special Event Styling</option>
+                                <option value="consultation">Consultation</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="date">Preferred Date</label>
+                        <input type="date" id="date" name="date">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Additional Notes</label>
+                        <textarea id="message" name="message" rows="4"
+                            placeholder="Tell us about your hair goals or any special requests..."></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Request Appointment</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Responsive Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p>📍 123 Style Avenue<br>Calgary, AB T2P 1J9</p>
+                    <p>📞 (403) 123-4567</p>
+                    <p>✉️ hello@luxelockscalgary.com</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Hours</h3>
+                    <p>Monday - Thursday: 9:00 AM - 8:00 PM</p>
+                    <p>Friday - Saturday: 9:00 AM - 6:00 PM</p>
+                    <p>Sunday: 11:00 AM - 5:00 PM</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <p>Stay updated with our latest styles and promotions</p>
+                    <div class="social">
+                        <a href="#" aria-label="Instagram">Instagram</a>
+                        <a href="#" aria-label="Facebook">Facebook</a>
+                        <a href="#" aria-label="TikTok">TikTok</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2025 LuxeLocks Hair Studio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Image Modal -->
+    <div id="imageModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img id="modalImage" src="" alt="Gallery Image">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
